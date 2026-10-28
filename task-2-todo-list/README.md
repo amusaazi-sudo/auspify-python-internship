@@ -9,16 +9,18 @@ A command-line Python app for managing daily tasks, built as part of the **Auspi
 - **Delete tasks**, with a confirmation prompt
 - **Persistent storage**: tasks are saved to `tasks.json` after every change
 - **Input validation**: handles empty titles, non-numeric ids and missing tasks
+- **Rich terminal UI**: coloured menu, task table with status icons, and styled messages using the [Rich](https://github.com/Textualize/rich) library
 
 ## Skills Practised
-File handling (JSON) · Lists and dictionaries · CRUD operations · Input validation · Functions
+File handling (JSON) · Lists and dictionaries · CRUD operations · Input validation · Functions · Third-party libraries (Rich)
 
 ## How to Run
-Requires Python 3.8+ (no external libraries).
+Requires Python 3.8+.
 
 ```bash
 cd task-2-todo-list
-python todo.py
+py -m pip install -r requirements.txt
+py todo.py
 ```
 
 ## Screenshots
@@ -33,8 +35,9 @@ python todo.py
 ## Project Structure
 ```
 task-2-todo-list/
-├── todo.py        # Main application
-├── tasks.json     # Created automatically on first run
+├── todo.py           # Main application
+├── requirements.txt  # Dependencies (rich)
+├── tasks.json        # Created automatically on first run
 ├── README.md
 └── screenshots/
 ```
